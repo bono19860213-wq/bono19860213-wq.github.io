@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>宍舞ぼの YouTube運営システム</title>
+<meta name="description" content="宍舞ぼのが自分のYouTubeチャンネルの分析にだけ使う、本人専用のツールです。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <p class="app-name">宍舞ぼの YouTube運営システム</p>
+  <p class="tagline">VTuber「宍舞ぼの」本人専用のYouTubeチャンネル分析ツール</p>
+  <nav>
+    <a href="./" aria-current="page">ホーム</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+  </nav>
+</header>
+
+<main>
+  <h1>このアプリについて</h1>
+  <p>宍舞ぼの YouTube運営システムは、VTuber「宍舞ぼの」が運営する2つのYouTubeチャンネル（スプラトゥーン専用チャンネル・ゲームチャンネル）の分析にだけ使う、<strong>本人専用</strong>のツールです。一般には配布・提供していません。運営者本人以外は利用できません。</p>
+  <p>本アプリは YouTube API Services を利用しています。</p>
+
+  <h2>主な機能</h2>
+  <ul>
+    <li>運営者本人のチャンネルの分析データ（再生数・総再生時間・平均視聴時間・登録者の増減など）を週ごとに取得し、集計する</li>
+    <li>前週や過去数週との比較レポートを作り、次の配信・動画の企画づくりに役立てる</li>
+    <li>運営者本人の動画の字幕をダウンロードし、ショート動画にする場面の候補を探す</li>
+    <li>参考にする他チャンネルの公開情報（動画タイトル・再生数など）を取得し、比較する</li>
+  </ul>
+
+  <h2>Googleアカウントのデータを使う理由</h2>
+  <p>YouTubeアナリティクスの数値や自分の動画の字幕は、チャンネルの所有者がログインしないと取得できません。そのため、運営者本人が自分のGoogleアカウントでログインし、次の権限を許可しています。</p>
+  <table>
+    <tr><th>権限</th><th>使う目的</th></tr>
+    <tr><td>YouTubeアカウントの表示<br><small>youtube.readonly</small></td><td>チャンネルの確認、動画の一覧・タイトル・公開日などの取得</td></tr>
+    <tr><td>YouTubeアナリティクスのレポートの表示<br><small>yt-analytics.readonly</small></td><td>再生数・視聴時間・登録者の増減などの分析データの取得</td></tr>
+    <tr><td>YouTube動画・字幕などの管理<br><small>youtube.force-ssl</small></td><td><strong>自分の動画の字幕ダウンロードにだけ使います</strong>（YouTubeの仕様上、字幕のダウンロードにはこの権限が必要です）。動画・字幕・コメントなどの投稿・編集・削除には使いません。</td></tr>
+  </table>
+
+  <p>取得したデータの扱いは<a href="privacy.html">プライバシーポリシー</a>に書いています。</p>
+
+  <h2>運営者</h2>
+  <p>宍舞ぼの（個人で活動するVTuber）<br>
+  連絡先：<a href="mailto:bono19860213@gmail.com">bono19860213@gmail.com</a></p>
+</main>
+
+<footer>
+  <a href="privacy.html">プライバシーポリシー</a> ／ <a href="terms.html">利用規約</a><br>
+  YouTubeはGoogle LLCの商標です。本アプリはGoogleおよびYouTubeが提供・推奨するものではありません。
+</footer>
+</body>
+</html>
